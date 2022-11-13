@@ -1,0 +1,42 @@
+* {
+
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+#header {
+    background-color: rgb(187, 181, 255);
+    text-align: center;
+    line-height: 46px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#main {
+    background-color: rgb(218, 218, 255);
+    height: 1000px;
+}
+
+#main #slider {
+    text-align: center;
+    padding-top: 56px;
+}
+
+#main #slider img {
+    height: 500px;
+    
+}
+
+#main #inf_proj  {
+    border-collapse: collapse;
+    margin: 50px auto 50px 100px;
+    text-align: center;
+}
+
+#main #inf_proj th, td {
+    border: 1px solid black;
+    padding: 5px;
+}

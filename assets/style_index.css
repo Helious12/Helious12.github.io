@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#main {
+    
+}
+
+
+#header {
+    height: 46px;
+    background-color: rgb(187, 181, 255);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+#nav1 {
+    color: black;
+    height: 50px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+#nav1, .subnav {
+    list-style-type: none;
+}
+
+#nav1 > li {
+    display: inline-block;
+    border: 1px;
+    border-color: #fff;
+}
+
+#nav1 li {
+    height: 46px;
+    position: relative;
+}
+
+#nav1 > li:hover > a,
+#nav1 .subnav li:hover a {    
+    background-color: rgb(79, 71, 194);
+    color: white;
+}
+
+#nav1 li:hover .subnav {
+    display: block;
+}
+
+
+#nav1 > li > a {
+    color: black;
+    padding: 30px;
+}
+
+#nav1 li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+#nav1 .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#header #menu_right {
+    float: right;
+    cursor: pointer;
+}
+
+#header #menu_right li:hover a {
+    background-color: rgb(19, 12, 61);
+    color: white;
+}
+
+#header #menu_right li {
+    list-style-type: none;
+}
+
+#header #menu_right li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 15px 21px;
+}
+
+#slider {
+    margin-top: 46px;
+    height: 400px;
+    background: url("./imgs/slider/background1.png") top center / cover no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+#slider img {
+    height: auto;
+    max-height: 350px;
+    margin-top: 50px;
+}
+
+
+#content {
+    background-color: rgb(218, 218, 255);
+}
+
+#content #AM-text {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#content #AM-text .headtext1 {
+    font-size: 20px;
+}
+
+#content p {
+    padding: 15px;
+    text-align: center;
+}
+
+#content #PI-all {
+    background-color: rgb(218, 218, 255);
+    display: flex;
+
+}
+
+#content #PI-all #PI-left {
+    flex:50%;
+}
+
+#content #PI-all #PI-left #PI-contact-page {
+    text-align: center;
+    background-image: url("/assets/imgs/Img_am_left2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+#content #PI-all #PI-left img {
+    width: 50%;;
+    margin: 20px;
+    margin-top: 90px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#content #PI-all #PI-left #socal-media {
+    list-style-type: none;
+}
+
+#content #PI-all #PI-left #socal-media li {
+    padding: 5px 0;
+}
+
+#content #PI-all #PI-left #socal-media li a{
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+#content #PI-all #PI-left #socal-media .brandicon {
+    font-size: 15px;
+}
+
+#content #PI-all #PI-right {
+    flex: 50%;
+    padding: 5px;
+    border-style: inset;
+    margin: 15px;
+}
+
+#content #PI-all #PI-right h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#content #PI-all #PI-right #tb_infor {
+    border-collapse: collapse;
+    margin:10px auto 20px 40px;
+    text-align: center;
+}
+
+#content #PI-all #PI-right #tb_infor th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#content #PI-all #PI-right ul li {
+    padding: 5px 0 11px 35px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+
+#footer {
+    background-color: rgb(187, 181, 255);
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
