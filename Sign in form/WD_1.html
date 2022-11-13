@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form 1</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Hoang Thanh Lich database"/>
+        <script src = "WD_1.js"></script>
+        <link  rel = "stylesheet" href = "WD_1.css">
+    </head>
+    <body>
+        <h1><strong>Enter information</strong></h1>
+        <h2><em>Hello</em></h2>
+        <div id = "error_mes"></div>
+
+        <form id = "registerForm" method="post" action = "Confirm.html" validate>
+            <fieldset>
+                <legend>Personal information</legend>
+                
+                <P><label for = "first_name">Enter your First name!</label>
+                <input type = "text" id="first_name" name="First_name" ></P>
+
+                <p><label for = "last_name">Enter your Last name!</label>
+                <input type = "text" id="last_name" name="Last_name" ></p>
+
+                <p><label for = "email">Enter your Email!</label>
+                <input type = "text" id="email" name="Email" ></p>
+
+                <p><label for = "phone_number">Enter your Phone number!</label>
+                <input type = "text" id="phone_number" name="Phone_number" ></p>
+
+                <p><label for = "age">Enter your age!</label>
+                <input type = "text" id="age" name="age" ></p>
+
+            </fieldset>
+
+            <hr />
+            <fieldset id = "radio_occupation">
+                <legend>Select your occupation</legend>
+
+                <label for = "university">University</label>
+                <input type="radio" name ="occupation" id = "university" value="University"><br />
+
+                <label for = "working">Working</label>
+                <input type="radio" name ="occupation" id = "working" value="Working"><br />
+
+                <label for = "retired">Retired</label>
+                <input type="radio" name ="occupation" id = "retired" value="Retired"><br />
+
+            </fieldset>
+
+            <hr />
+            <fieldset id = "checkbox_lane">
+                <legend>Select your lane</legend>
+
+                <label for = "top">Top -10</label>
+                <input type="checkbox" name = "Top" id = "top" value="Lane"><br />
+
+                <label for = "jungle">Jungle -20</label>
+                <input type="checkbox" name = "Jungle" id = "jungle" value="Lane"><br />
+
+                <label for = "mid">Mid -30</label>
+                <input type="checkbox" name = "Mid" id = "mid" value="Lane"><br />
+
+                <label for = "ad">Ad -40</label>
+                <input type="checkbox" name = "Ad" id = "ad" value="Lane"><br />
+                
+                <label for = "sp">Sp - 50</label>
+                <input type="checkbox" name = "Sp" id = "sp" value="Lane"><br />
+            </fieldset>
+
+            <br />
+            <label for = "chair">Choose your chair</label>
+            <select name = "chair" id = "chair">
+                <option value = "none">Please select your chair</option>
+                <option value = "gaming">Gaming</option>
+                <option value = "normal">normal</option>
+            </select>
+
+            <br />
+            <br />
+            <input type = "submit" value="Next"/>
+        </form>
+        <button style="margin: 10px;"><a href="/index.html">Back to menu</a></button>
+    </body>
+</html>
