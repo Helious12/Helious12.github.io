@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form 1</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Hoang Thanh Lich database"/>
+        <script src = "./WD_1.js"></script>
+        <link  rel = "stylesheet" href = "./WD_1.css">
+    </head>
+    <body>
+        <div class="form">
+            <h1><strong>GET IN TOUCH</strong></h1>
+
+            <div id = "error_mes"></div>
+    
+            <form id = "registerForm" method="post" action = "./confirm.html" validate>
+                    
+                <div class="home">
+                    <div class="floor1">
+                        <P id = "room1" ><label for = "name">Tell us your name</label><br>
+                        <input class = "text" type = "text" id="name" name="Name" placeholder="Enter your name*" ></P>
+        
+                        <p id = "room2"><label for = "email">Enter your email</label><br>
+                        <input class = "text" type = "text" id="email" name="Email" placeholder="Enter your email*"></p><br>
+                    </div>
+
+                    <div  div class="floor2">
+                        <p><label for = "site">Tell us your website</label><br>
+                        <input class = "text" type = "text" id="site" name="site" placeholder="http://"></p>
+        
+                        <p><label for = "message">Enter your message</label><br>
+                        <input class = "text" type = "text" id="message" name="message" placeholder="Your message here......."></p>
+                    </div>
+                </div>
+    
+                <div class="btnz"><input type = "submit" value="SUBMIT" class = "btn"/></div>
+            </form>
+        </div>
+    </body>
+</html>
