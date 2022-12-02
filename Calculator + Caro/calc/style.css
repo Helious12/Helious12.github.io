@@ -1,0 +1,298 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-image: linear-gradient(45deg, pink, red); */
+    background-color: #f7d3e4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: device-width;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#calculator {
+    /* background-image: linear-gradient(45deg, pink, red); */
+    background-color: #f1b3cd;
+    width: 320px;
+    height: 565px;
+    margin: 50px auto;
+    border: 2px solid;
+    border-radius: 25px;  
+}
+
+
+
+#totalAndButtons {
+    background-color: #fdf4f3;
+    width: auto;
+    /* height: 620px; */
+    margin: 10px 10px 10px 10px;
+    padding: 10px auto;
+    border: 2px solid;
+    border-radius: 10px;  
+    display: inline-block;
+    /* text-align: center; */
+
+}
+
+#total {
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: #ffd8d4b0;
+    /* background-image: url('./Pha.jpg'); */
+    position: relative;
+}
+
+/* .dinamicIsland {
+    width: 70px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 110px;
+    margin-top: 5px;
+    border-radius: 50px;
+} */
+
+/* #total:hover{
+    background-image: url(./pha2.jpg);
+    background-size: 300px;
+} */
+
+#equation {
+    text-align: right;
+    color: black;
+    width: 266px;
+    font-size: 46px;
+}
+
+#clear {
+    width: 24px;
+    height: 20px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50% 0% 0% 0%;
+}
+
+button {
+
+    width: 65px;
+    height: 55px; 
+    display: block;
+    float:left;  
+    color: rgb(127,96,63);  
+    border: 1px solid rgb(127,96,63);  
+    border-radius: 10px;
+    margin: 4px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    transition: background .15s ease-in, transform .25s ease-in-out;
+    cursor: pointer;
+    background-color: #f8d6dd;
+}
+
+
+button:focus {
+    outline:0;
+  }
+  
+button:active {
+    border: 0 solid #000;
+    transform: scale(5);   
+}/* đọc lại về focus và active !!!!!! */
+
+
+.number {
+
+}
+
+#equal {
+    width: 135px;
+    background-color: #ffa8b9;
+}
+
+#equation {
+    height: 200px;
+    padding: 0;
+}
+
+/* .spe:hover {
+    background-image: url('./Pha.jpg');
+    background-size: 65px;
+    font-size: 0px;
+} */
+
+#back_btn {
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(187, 181, 255);
+    font-size: 24px;
+}
+
+#back_btn:hover {
+    background-color: black;
+    color: aliceblue;
+    /* margin: 0px 0 20px 30px; */
+}
+
+footer {
+    background-color: rgb(187, 181, 255);
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.a1:active {
+    background-image: url(./Pha.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+
+.a2:active {
+    background-image: url(./pha6.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a3:active {
+    background-image: url(./pha3.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a4:active {
+    background-image: url(./pha4.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a5:active {
+    background-image: url(./pha5.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a6:active {
+    background-image: url(./pha6.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a7:active {
+    background-image: url(./pha8.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a8:active {
+    background-image: url(./pha6.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a9:active {
+    background-image: url(./pha9.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a10:active {
+    background-image: url(./pha10.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a11:active {
+    background-image: url(./pha11.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a12:active {
+    background-image: url(./pha12.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a13:active {
+    background-image: url(./pha13.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a14:active {
+    background-image: url(./pha14.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a15:active {
+    background-image: url(./pha2.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a16:active {
+    background-image: url(./pha2.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a17:active {
+    background-image: url(./pha3.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a18:active {
+    background-image: url(./pha4.jpg);
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+.a19:active {
+
+    background-size: 60px;
+    background-size: cover;
+    font-size: 0;
+}
+
+
+
+
+
+
+
+
+
