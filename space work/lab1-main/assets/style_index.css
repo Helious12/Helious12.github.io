@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#main {
+    
+}
+
+
+#header {
+    height: 46px;
+    background-color: #acbedd;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+#pagename span {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+
+#nav1 {
+    color: black;
+    height: 50px;
+    padding: 0 10px;
+    display: inline-block;
+    /* background-color: #acbedd; */
+    /* flex-wrap: wrap; */
+}
+
+#nav1, .subnav {
+    list-style-type: none;
+}
+
+#nav1 > li {
+    display: inline-block;
+    border: 1px;
+    border-color: #fff;
+}
+
+#nav1 li {
+    height: 46px;
+    position: relative;
+}
+
+#nav1 > li:hover > a,
+#nav1 .subnav li:hover a {    
+    background-color: #709ed0;
+    color: white;
+}
+
+#nav1 li:hover .subnav {
+    display: block;
+}
+
+
+#nav1 > li > a {
+    color: black;
+    padding: 30px;
+}
+
+#nav1 li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+#nav1 .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#header #menu_left {
+
+}
+
+#header #menu_right {
+    float: right;
+    cursor: pointer;
+}
+
+#header #menu_right button {
+    right : 0;
+}
+
+#header #menu_right li:hover a {
+    background-color: rgb(19, 12, 61);
+    color: white;
+}
+
+#header #menu_right .js-btnOpen {
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+
+#header #menu_right li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 15px 21px;
+}
+
+#slider {
+    margin-top: 46px;
+    height: 400px;
+    background: url("./imgs/slider/background1.png") top center / cover no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+#slider img {
+    height: auto;
+    max-height: 350px;
+    margin-top: 50px;
+}
+
+
+#content {
+    background-color:#c6ccdf;
+}
+
+#content #AM-text {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#content #AM-text .headtext1 {
+    font-size: 20px;
+}
+
+#content p {
+    padding: 15px;
+    text-align: center;
+}
+
+#content #PI-all {
+    background-color: #c6ccdf;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#content #PI-all #PI-left {
+    flex:50%;
+}
+
+#content #PI-all #PI-left #PI-contact-page {
+    text-align: center;
+    background-image: url("/assets/imgs/Img_am_left2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+#content #PI-all #PI-left img {
+    width: 50%;;
+    margin: 20px;
+    margin-top: 90px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#content #PI-all #PI-left #socal-media {
+    list-style-type: none;
+}
+
+#content #PI-all #PI-left #socal-media li {
+    padding: 5px 0;
+}
+
+#content #PI-all #PI-left #socal-media li a{
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+#content #PI-all #PI-left #socal-media .brandicon {
+    font-size: 15px;
+}
+
+#content #PI-all #PI-right {
+    flex: 50%;
+    padding: 5px;
+    border-style: inset;
+    margin: 15px;
+}
+
+#content #PI-all #PI-right h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#content #PI-all #PI-right #tb_infor {
+    border-collapse: collapse;
+    margin:10px auto 20px 40px;
+    text-align: center;
+}
+
+#content #PI-all #PI-right #tb_infor th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#content #PI-all #PI-right ul li {
+    padding: 5px 0 11px 35px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+
+#footer {
+    background-color: #acbedd;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.modal {
+    position: fixed;
+    top:0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgba(0,0,0, 0.4);
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* border-radius: 40px; */
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    border: 5px ridge black;
+    background-color: #fff;
+    width: 80%;
+    height: 60%;
+    position: relative;
+    /* border-radius: 40px; */
+}
+
+.modal-body {
+    padding: 1% 10%;
+    height: 65%;
+    border-radius: 40px;
+}
+
+.modal-body label {
+    display: block;
+    padding: 20px;
+    padding-left: 5px;
+    margin: 10px;
+    font-size: 200%;
+    border-radius: 40px;
+}
+
+.modal-body input {
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+    font-size: 150%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.modal .modal-container .ti-close {
+    position: absolute;
+    color: black;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.modal .modal-container .ti-close:hover {
+    background-color: red;
+}
+
+.modal-header {
+    background-color: #709ed0;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px;
+}
+
+.modal .modal-container .modal-body #search {
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.modal .modal-container .modal-body #search:hover {
+    background-color: #709ed0;
+}
+
+.modal-footer {
+    height: 5.35%;
+    background-color: #709ed0;
+    display: block;
+}
+
+.modal-footer .modal-help {
+    text-align: right;
+    padding: 6px;
+}
+
+@media (max-width: 950px ) {
+    #content #PI-all {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav1 {
+        /* display: flex; */
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+    }
+
+    #nav1 li ul {
+        width: 100%;
+    }
+
+    #nav1 > li a {
+        /* display: none; */
+        line-height: 23px;
+        display: block;
+        height: 100%;
+        padding-top: 10px;
+        margin-top: 0;
+
+    }
+
+    #header {
+        height: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    #nav1 li {
+        width: 100%;
+    }
+
+    #menu_right {
+        padding-top: 15px;
+        float: left;
+        width: 100%;
+        background-color: #acbedd;
+    }
+
+    #pagename {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px ) {
+    #content #PI-all #PI-right #tb_infor {
+        margin: 5px;
+        padding: 5px;
+        /* background-color: black; */
+    }
+
+    #content #PI-all #PI-right ul li {
+        padding: 5px;
+    }
+}
+
+

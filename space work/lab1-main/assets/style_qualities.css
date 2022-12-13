@@ -1,0 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 76px;
+    background-color: rgb(187, 181, 255);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+#slider {
+    padding-top: 120px;
+    text-align: center;
+    background-color: rgb(218, 218, 255);
+}
+
+#main {
+    padding-top: 10px;
+    background-color: rgb(218, 218, 255);
+}
+
+#main .tag {
+    padding: 50px;
+    display: flex;
+}
+
+#main .tag img {
+    height: 500px;
+}
+
+#main .tag .infor {
+    flex: 50%;
+    background-color: rgb(230, 230, 255);
+    height: 500px;
+}
+
+#main .tag .infor h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#main .tag .infor ul {
+    padding: 10px 5px 5px 30px ;
+}
+
+#main .tag .infor ul li {
+    padding: 5px 5px 5px 20px;
+    list-style-type: none;
+}
+
+#main .tag .right {
+    flex: 90%;
+}
+
+#back_btn {
+    margin: 10px 10px 30px 40px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(187, 181, 255);
+}
+
+#back_btn:hover {
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    margin: 0px 0 20px 30px;
+}
+
+#footer {
+    background-color: rgb(187, 181, 255);
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
