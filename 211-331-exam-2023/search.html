@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/211-331-exam-2023/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap"rel="stylesheet">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class=" fs-2 p-2 d-flex justify-content-between">
+        <div>
+            <a href="/211-331-exam-2023/index.html" class = "text-decoration-none text-black">
+                <img style="width: 100px;" src="./image/logo.png" alt="logo" />
+            <span class="text-primary fs-2">Travel</span>oka
+            </a>
+        </div>
+        <a class="text-decoration-none text-black fs-3 mt-3" href="admin.html">AdminControl</a>
+    </div>
+
+    <div class="alerts w-75 mx-auto">
+        <div class="d-none alert alert-warning alert-dismissible fade hidden" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="main-body m-auto">
+    
+        <div class="tab container pt-5 routes-list m-auto">
+            <div class="routes">
+                <p class="fs-2">List of walking routes</p>
+            </div>
+            <div class="row gx-0">
+                <div class="col-10 col-md-5">
+                    <form role="search">
+                        <input class="form-control search-field" type="search" placeholder="Enter" aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-light search-btn">Start</button>
+                </div>
+                <div class="dropdown col-12 col-md-5 overflow-auto">
+                    <button class="btn btn-light btn-main-object dropdown-toggle float-md-end mt-3 mt-md-0" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Main object</button>
+                    <ul class="dropdown-menu main-objects-list" style = "z-index: 1000;">
+                        <li><a class="dropdown-item" href="#" >Main object</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="py-3 row table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="">
+                        <tr>
+                            <th scope="col" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="This top tooltip is themed via CSS variables.">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Main objects</th>
+                            <th scope="col">Choose</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-routes">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- số trang cho list 1 -->
+        <div class="container pb-3">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center d-flex flex-wrap">
+                    <li class="page-item"><a class="page-link active bg-secondary text-warning" href="#">1</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="tab container pt-5 guides-list" id="guides-list">
+            <div class="guides">
+                <p class="fs-2">Available route guides: Route not selected</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <button class="btn btn-light btn-language dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Tour language</button>
+                    <ul class="dropdown-menu language-list">
+                        <li><a class="dropdown-item" href="#">Tour language</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12 text-center fs-4">
+                            Work Experience
+                        </div>
+                        <div class="col-6">
+                            <label for="work-min-experience" class="form-label">From</label>
+                            <input class="form-control" id="work-min-experience" placeholder="">
+                        </div>
+                        <div class="col-6">
+                            <label for="work-max-experience" class="form-label">To</label>
+                            <input class="form-control" id="work-max-experience" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 my-2">
+                    <button type="button" class="btn btn-light search-btn-guides">Search</button>
+                </div>
+            </div>
+    
+            <div class="py-3 row table-responsive mt-2">
+                <table class="table table-bordered table-hover">
+                    <thead class="">
+                        <tr>
+                            <th scope="col" class="text-center fs-1">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Languages</th>
+                            <th scope="col">Work Experience</th>
+                            <th scope="col">Service cost per hour</th>
+                            <th scope="col">Choose</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-guides">
+    
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-secondary text-warning checkout-route" data-bs-toggle="modal"
+                    data-bs-target="#addTask" data-action="show" disabled>Checkout</button>
+            </div>
+        </div>
+    
+        <div class="tab modal fade" id="addTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Application form</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <form id="create-task-form">
+                            <div class="mb-3 row">
+                                <label for="name" class="col-form-label col-md-4">Guide name</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control-plaintext" readonly id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="desc" class="col-form-label col-md-4">Route</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control-plaintext" readonly id="route" name="route">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-4 mb-1">
+                                    <label for="date" class="mb-1">Tour date</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <label for="time" class="mb-1">Start time (every 30 minutes)</label>
+                                    <input type="time" id="time" min="09:00" max="23:00" step="1800" value="09:00" required>
+                                </div>
+                                <div class="col-6 col-md-4 mb-2">
+                                    <label for="selectLength" class="mb-1">Tour duration</label>
+                                    <select id="selectLength" class="form-select" aria-label="Default select example">
+                                        <option value="1" selected>1 H</option>
+                                        <option value="2">2 H</option>
+                                        <option value="3">3 H</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 my-2">
+                                    <label for="customRange2" class="form-label">Number of persons</label>
+                                    <input type="range" class="form-range" min="1" max="20" step="1" id="customRange2"
+                                        value="1">
+                                    <input type="text" class="form-control" id="number-people" name="number-people"
+                                        value="1" disabled>
+                                </div>
+                                <label for="flexSwitchCheckDefault" class="mb-1">Additional options:</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="option1">
+                                    <label class="form-check-label" for="option1">Use the senior citizen discount</label>
+                                </div>
+                                <div class="form-check form-switch mb-2">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="option2">
+                                    <label class="form-check-label" for="option2">Thematic souvenirs for visitors</label>
+                                </div>
+                                <div class="mb-3 row mt-2">
+                                    <label for="name" class="col-form-label col-md-6">The total cost:</label>
+                                    <div class="col-md-6 mt-md-2">
+                                        <input type="text" class="form-control-plaintext" readonly id="price" name="price">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary back-btn" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" form="create-task-form" class="btn btn-primary create-btn">Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="tab mt-4 m-auto" style="border: solid black; width: 90%; height: 80vh;">
+            <div class="text-center mt-4">
+                <div class="">
+                    <div class="fs-2">Tell us where are you ?</div>
+                    <div class="m-auto" style="width: 60%; text-align: center;">
+                        <input type="text" class="mt-3 p-3" style="width: 70%;" placeholder="Enter address"
+                            aria-describedby="addon-wrapping">
+                        <button type="summit" class="btn btn-primary p-3">Show on map</button>
+                    </div>
+                </div>
+                <div id="map" class = "mt-4" style = "height: 450px; width: 80%; margin-left: 10%;"></div>
+                <div class="">
+                    <div class="fs-2 mt-2">Where would you like to go?</div>
+                    <div class="m-auto" style="width: 60%; text-align: center;">
+                        <input type="text" class="mt-3 p-3" style="width: 70%;" placeholder="Enter address"
+                            aria-describedby="addon-wrapping">
+                        <button type="summit" class="btn btn-primary p-3">Start</button>
+                    </div>
+                </div>
+            </div>
+                
+            
+        </div>
+
+    </div>
+
+    <div class="footer m-2">Design by Hoang Thanh Lich</div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous">
+</script>
+<script src="https://mapgl.2gis.com/api/js/v1"></script>
+<script>
+    const map = new mapgl.Map('map', {
+        center: [55.31878, 25.23584],
+        zoom: 13,
+        key: '8baecf6d-a045-4b7f-81cf-d338d03be93d',
+        style: 'c080bb6a-8134-4993-93a1-5b4d8c36a59b'
+    });
+    const marker = new mapgl.Marker(map, {
+        coordinates: [55.31878, 25.23584],
+    });
+</script> 
+
+<script src="main.js"></script>
+
+</html>
