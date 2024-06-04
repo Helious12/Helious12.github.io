@@ -60,10 +60,11 @@ body {
 
 #downloadButton {
     display: block; /* Đảm bảo nút hiển thị dưới dạng block */
-    margin-top: 20px; /* Khoảng cách giữa nút và thẻ .card */
+    margin-top: 40px; /* Khoảng cách giữa nút và thẻ .card */
     margin-left: auto;
     margin-right: auto; /* Căn giữa nút */
-    padding: 25px 40px;
+    padding: 40px 70px;
+    font-size: 35px;
     background-color: #007bff; /* Màu xanh dương */
     color: white;
     border: none;
