@@ -76,6 +76,7 @@ body {
     .card {
         max-width: 95%; /* Cho phép ảnh chiếm gần như toàn bộ chiều rộng trên điện thoại */
         margin: 10px; /* Giảm margin trên điện thoại */
+        font-size: 20rem;
     }
 
     .overlay {
@@ -84,7 +85,15 @@ body {
         transform: scale(0.7); /* Tăng tỷ lệ scale cho điện thoại */
     }
 
-    #downloadButton {
-        padding: 8px 16px; /* Giảm padding cho nút */
+
+
+    body {
+        padding: 20px; /* Thêm padding cho body trên điện thoại */
     }
+
+    button {
+        padding: 15px 30px; /* Giảm padding cho nút */
+        font-size: 25px; /* Điều chỉnh kích thước font chữ */
+    }
+
 }

@@ -1,11 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/biendao/background.jpg'); /* Đường dẫn tới ảnh nền */
+    background-image: url('/background.jpg'); /* Đường dẫn tới ảnh nền */
     background-size: cover; /* Điều chỉnh kích thước ảnh nền */
     background-position: center; /* Căn giữa ảnh nền */
     color: #000000; /* Màu chữ trắng */
@@ -15,6 +15,8 @@ body {
 .container {
     background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
     padding: 40px;
+    max-width: 800px; /* Giới hạn chiều rộng nội dung */
+    margin: 20px auto; /* Căn giữa nội dung */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -28,6 +30,9 @@ h1 {
 p {
     color: #555; /* Màu chữ mô tả */
     margin-bottom: 30px;
+    line-height: 1.6;
+    padding-left: 30px; /* Hoặc margin-left: 20px; */
+    padding-right: 30px; /* Hoặc margin-right: 20px; */
 }
 
 .form-group {
@@ -84,12 +89,12 @@ button:hover {
 
     input[type="text"],
     input[type="number"] {
-        padding: 10px; /* Giảm padding cho input */
-        font-size: 16px; /* Điều chỉnh kích thước font chữ */
+        padding: 30px; /* Giảm padding cho input */
+        font-size: 25px; /* Điều chỉnh kích thước font chữ */
     }
 
     button {
-        padding: 10px 20px; /* Giảm padding cho nút */
-        font-size: 16px; /* Điều chỉnh kích thước font chữ */
+        padding: 15px 30px; /* Giảm padding cho nút */
+        font-size: 25px; /* Điều chỉnh kích thước font chữ */
     }
 }
