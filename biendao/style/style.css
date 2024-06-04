@@ -48,7 +48,8 @@ label {
 input[type="text"],
 input[type="number"] {
     width: 100%;
-    padding: 12px;
+    padding: 30px; /* Giảm padding cho input */
+    font-size: 25px; /* Điều chỉnh kích thước font chữ */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -57,7 +58,7 @@ input[type="number"] {
 button {
     background-color: #007bff; /* Màu xanh dương */
     color: white;
-    padding: 12px 25px;
+    padding: 20px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
