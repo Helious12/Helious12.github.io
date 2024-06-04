@@ -32,6 +32,7 @@ p {
     color: #555; /* Màu chữ mô tả */
     margin-bottom: 30px;
     line-height: 1.6;
+    text-align: justify;
     padding-left: 30px; /* Hoặc margin-left: 20px; */
     padding-right: 30px; /* Hoặc margin-right: 20px; */
 }
