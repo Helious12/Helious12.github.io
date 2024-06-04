@@ -1,0 +1,164 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Hiệu ứng lộ ảnh</title>
+<style>
+#image-container {
+  position: relative;
+}
+
+.tile {
+  position: absolute;
+  width: calc(100% / 20);
+  height: calc(100% / 25);
+  background-color: white;
+  border: 1px solid black;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  opacity: 0; /* Ban đầu ảnh sẽ bị ẩn đi */
+}
+
+#counter {
+  margin-top: 10px;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+  <input type="number" id="numTiles" value="10" min="1" max="500">
+  <button onclick="removeTiles()">Xóa ô</button>
+  <div id="counter">Số ô đã xóa: 0</div>
+
+  <div id="image-container">
+    <img id="image" src="/background.jpg">
+  </div>
+
+  <script>
+    const imageContainer = document.getElementById("image-container");
+    const image = document.getElementById("image");
+    const numTilesInput = document.getElementById("numTiles");
+    const counter = document.getElementById("counter");
+    let removedTilesCount = 0;
+
+    const tiles = [];
+    for (let i = 0; i < 500; i++) {
+      const tile = document.createElement("div");
+      tile.classList.add("tile");
+      imageContainer.appendChild(tile);
+      tiles.push(tile);
+
+      const row = Math.floor(i / 20);
+      const col = i % 20;
+      tile.style.top = `${row * (100 / 25)}%`;
+      tile.style.left = `${col * (100 / 20)}%`;
+    }
+
+    image.onload = function() {
+      imageContainer.style.backgroundImage = `url(${image.src})`;
+      imageContainer.style.backgroundSize = "cover";
+    };
+
+    function removeTiles() {
+      const numTiles = parseInt(numTilesInput.value);
+
+      for (let i = 0; i < numTiles; i++) {
+        if (tiles.length > 0) {
+          const randomIndex = Math.floor(Math.random() * tiles.length);
+          const tileToRemove = tiles.splice(randomIndex, 1)[0];
+          tileToRemove.style.opacity = 0;
+          removedTilesCount++;
+          counter.textContent = `Số ô đã xóa: ${removedTilesCount}`;
+        }
+      }
+    }
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hiệu ứng lộ ảnh</title>
+<style>
+#image-container {
+  position: relative;
+}
+
+.tile {
+  position: absolute;
+  width: calc(100% / 41); /* 41 cột */
+  height: calc(100% / 49); /* 49 hàng */
+  background-color: white;
+  border: 1px solid black;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  opacity: 0; 
+}
+
+#counter {
+  margin-top: 10px;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+  <input type="number" id="numTiles" value="10" min="1" max="2009">
+  <button onclick="removeTiles()">Xóa ô</button>
+  <div id="counter">Số ô đã xóa: 0</div>
+
+  <div id="image-container">
+    <img id="image" src="/background.jpg">
+  </div>
+
+  <script>
+    const imageContainer = document.getElementById("image-container");
+    const image = document.getElementById("image");
+    const numTilesInput = document.getElementById("numTiles");
+    const counter = document.getElementById("counter");
+    let removedTilesCount = 0;
+
+    const tiles = [];
+    for (let i = 0; i < 2009; i++) { // Tạo 2009 ô
+      const tile = document.createElement("div");
+      tile.classList.add("tile");
+      imageContainer.appendChild(tile);
+      tiles.push(tile);
+
+      const row = Math.floor(i / 41); // 41 cột
+      const col = i % 41;
+      tile.style.top = `${row * (100 / 49)}%`; // 49 hàng
+      tile.style.left = `${col * (100 / 41)}%`;
+    }
+
+    image.onload = function() {
+      imageContainer.style.backgroundImage = `url(${image.src})`;
+      imageContainer.style.backgroundSize = "cover";
+    };
+
+    function removeTiles() {
+      const numTiles = parseInt(numTilesInput.value);
+
+      for (let i = 0; i < numTiles; i++) {
+        if (tiles.length > 0) {
+          const randomIndex = Math.floor(Math.random() * tiles.length);
+          const tileToRemove = tiles.splice(randomIndex, 1)[0];
+          tileToRemove.style.opacity = 0;
+          removedTilesCount++;
+          counter.textContent = `Số ô đã xóa: ${removedTilesCount}`;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
