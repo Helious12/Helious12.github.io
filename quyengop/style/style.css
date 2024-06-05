@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('./background.jpg'); /* Đường dẫn tới ảnh nền */
+    background-image: url('/quyengop/background.jpg'); /* Đường dẫn tới ảnh nền */
     background-size: cover; /* Điều chỉnh kích thước ảnh nền */
     background-position: center; /* Căn giữa ảnh nền */
     color: #000000; /* Màu chữ trắng */
